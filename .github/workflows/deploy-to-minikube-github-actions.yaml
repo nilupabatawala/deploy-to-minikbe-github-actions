@@ -22,6 +22,7 @@ jobs:
     - name: Deploy to minikube
       run: |
         export SHELL=/bin/bash
+        ls -l k8s-node-app.yaml
         kubectl apply -f k8s-node-app.yaml
     - name: Test service URLs
       run: |
